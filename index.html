@@ -24,7 +24,6 @@
           <figure class="imagem-principal">
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
-              alt="Frasco do perfume Essencia de Suvacu em fundo neutro"
               class="foto-produto"
             />
             <figcaption class="sr-only">Imagem principal do produto</figcaption>
@@ -132,42 +131,6 @@
                 </ul>
               </section>
             </div>
-
-          <section class="avaliacoes-destaque" aria-labelledby="titulo-depoimentos">
-            <h3 id="titulo-depoimentos"><span aria-hidden="true">⭐</span> O que dizem nossos clientes</h3>
-
-            <article class="depoimento-cliente" aria-labelledby="dep1-autor">
-              <figure>
-                <img
-                  src="/img/nonno.tiff"
-                  alt="Cliente Marc Nonno sorrindo"
-                  class="foto-cliente"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                />
-              </figure>
-              <blockquote cite="#" class="texto-depoimento">
-                <p>“Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah.”</p>
-              </blockquote>
-              <p id="dep1-autor" class="autor-depoimento">Marc Nonno – Turim, Itália</p>
-            </article>
-
-            <article class="depoimento-cliente" aria-labelledby="dep2-autor">
-              <blockquote cite="#" class="texto-depoimento">
-                <p>“Perfume maravilhoso que elimina qualquer cheiro do meu corpo. Minha namorada vai ao delírio.”</p>
-              </blockquote>
-              <p id="dep2-autor" class="autor-depoimento">Baran Gaum – Istambul, Turquia</p>
-              <figure>
-                <img
-                  src="/img/baran.tiff"
-                  alt="Cliente Baran Gaum em close"
-                  class="foto-cliente"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                />
-              </figure>
-            </article>
-          </section>
         </div>
       </section>
 
@@ -194,85 +157,29 @@
           <fieldset class="passo-compra passo-1">
             <legend><strong>Passo 1: Escolha o tamanho do perfume</strong></legend>
             <p class="instrucao">Selecione uma das opções abaixo:</p>
-
-            <div class="opcoes-tamanho" role="radiogroup" aria-labelledby="leg-tamanhos">
-              <span id="leg-tamanhos" class="sr-only">Tamanhos disponíveis</span>
-
-              <div class="opcao-tamanho">
-                <input
-                  type="radio"
-                  id="tamanho-50ml"
-                  name="tamanho"
-                  value="50"
-                  data-preco="299.90"
-                  aria-describedby="desc-50ml"
-                  checked
-                />
-                <label for="tamanho-50ml">
-                  <span class="tamanho-visual">
-                    <img
-                      src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                      alt="Frasco 50ml"
-                      class="mini-frasco"
-                    />
-                  </span>
-                  <span class="tamanho-info">
-                    <strong>50 ml - R$ 299,90</strong>
-                    <span class="descricao-opcao" id="desc-50ml">Tamanho ideal para experimentar</span>
-                  </span>
-                </label>
               </div>
 
+              <input
+                type="radio"
+                id="tamanho-75ml"
+                name="tamanho"
+                value="75"
+                data-preco="399.90"
+              />
               <div class="opcao-tamanho popular">
-                <input
-                  type="radio"
-                  id="tamanho-75ml"
-                  name="tamanho"
-                  value="75"
-                  data-preco="399.90"
-                  aria-describedby="desc-75ml"
-                />
-                <label for="tamanho-75ml">
-                  <span class="tamanho-visual">
-                    <img
-                      src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                      alt="Frasco 75ml"
-                      class="mini-frasco"
-                    />
-                  </span>
-                  <span class="tamanho-info">
-                    <strong>75 ml - R$ 399,90</strong>
-                    <span class="descricao-opcao" id="desc-75ml">
-                      <span aria-hidden="true">🔥</span>
-                      Mais popular - Melhor custo benefício
-                    </span>
-                  </span>
-                </label>
-              </div>
-
-              <div class="opcao-tamanho melhor-valor">
-                <input
-                  type="radio"
-                  id="tamanho-100ml"
-                  name="tamanho"
-                  value="100"
-                  data-preco="499.90"
-                  aria-describedby="desc-100ml"
-                />
-                <label for="tamanho-100ml">
-                  <span class="tamanho-visual">
-                    <img
-                      src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                      alt="Frasco 100ml"
-                      class="mini-frasco"
-                    />
-                  </span>
-                  <span class="tamanho-info">
-                    <strong>100 ml - R$ 499,90</strong>
-                    <span class="descricao-opcao" id="desc-100ml">
-                      <span aria-hidden="true">💰</span>
-                      Melhor valor - Maior economia
-                    </span>
+                <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
+                  <img
+                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
+                    alt="frasco lixo"
+                    class="mini-frasco"
+                  />
+                </div>
+                <div class="tamanho-info">
+                  <strong>75 mililitros - R$ 399,90</strong>
+                  <span class="descricao-opcao" id="desc-75ml">
+                    <span>🔥</span>
+                    MAIS POPULAR - Melhor custo benefício
                   </span>
                 </label>
               </div>
