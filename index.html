@@ -25,8 +25,8 @@
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
               class="foto-produto"
+              alt="Frasco de perfume Essencia de Suvacu"
             />
-            <figcaption class="sr-only">Imagem principal do produto</figcaption>
 
             <ul class="badges-produto" aria-label="Destaques do produto">
               <li class="badge novo"><span aria-hidden="true">🆕</span> <span>Lançamento</span></li>
@@ -135,11 +135,11 @@
       </section>
 
       <section class="avaliacoes-destaque">
-        <h3><span>⭐</span> O que dizem nossos clientes</h3>
+        <h3><span aria-hidden="true">⭐</span> O que dizem nossos clientes</h3>
         <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
         <div class="depoimento-cliente">
             <!-- PROBLEMA: Alt text genérico -->
-            <img src="/img/nonno.tiff" alt="bixim malacabado" class="foto-cliente" loading="lazy"
+            <img src="/img/nonno.tiff" alt="Imagem de um cliente antes e depois" class="foto-cliente" loading="lazy"
                 onerror="this.style.display='none'">
             <!-- PROBLEMA: Citação sem tag semântica apropriada -->
             <div>
@@ -158,7 +158,7 @@
                 <span>- Baran Gaum, Istambul - Turquia</span>
             </div>
             <!-- PROBLEMA: Alt text genérico -->
-            <img src="/img/baran.tiff" alt="bixim feiu" class="foto-cliente" loading="lazy"
+            <img src="/img/baran.tiff" alt="Imagem de um cliente antes e depois" class="foto-cliente" loading="lazy"
                 onerror="this.style.display='none'">
         </div>
     </section>
@@ -194,7 +194,7 @@
                     <div class="tamanho-visual">
                         <!-- PROBLEMA: Alt text genérico -->
                         <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                            alt="produto meia-boca" class="mini-frasco">
+                            alt="frasco pequeno" class="mini-frasco">
                     </div>
                     <div class="tamanho-info">
                         <strong>50 mililitros - R$ 299,90</strong>
@@ -207,12 +207,12 @@
                     <div class="tamanho-visual">
                         <!-- PROBLEMA: Alt text genérico -->
                         <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                            alt="frasco lixo" class="mini-frasco">
+                            alt="frasco médio" class="mini-frasco">
                     </div>
                     <div class="tamanho-info">
                         <strong>75 mililitros - R$ 399,90</strong>
                         <span class="descricao-opcao" id="desc-75ml">
-                            <span>🔥</span>
+                            <span aria-hidden="true">🔥</span>
                             MAIS POPULAR - Melhor custo benefício
                         </span>
                     </div>
@@ -223,17 +223,16 @@
                     <div class="tamanho-visual">
                         <!-- PROBLEMA: Alt text genérico -->
                         <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                            alt="imagem do produto bem ruimzim" class="mini-frasco">
+                            alt="frasco grande" class="mini-frasco">
                     </div>
                     <div class="tamanho-info">
                         <strong>100 mililitros - R$ 499,90</strong>
                         <span class="descricao-opcao" id="desc-100ml">
-                            <span>💰</span>
+                            <span aria-hidden="true">💰</span>
                             MELHOR VALOR - Maior economia
                         </span>
                     </div>
                 </div>
-            </div>
             </div>
           </fieldset>
 
@@ -364,11 +363,10 @@
                 <figure>
                   <img
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
-                    alt="Frasco selecionado do perfume"
+                    alt="Frasco do perfume pequeno (50ml)"
                     class="produto-resumo"
                     id="imagem-resumo"
                   />
-                  <figcaption class="sr-only">Imagem do perfume selecionado</figcaption>
                 </figure>
                 <dl class="detalhes-pedido">
                   <dt>Produto:</dt>
@@ -508,82 +506,82 @@
           </button>
         </div>
       </section>
+      <section class="secao-extra" >
+         <h2 id="titulo-informacoes">
+           <span aria-hidden="true">ℹ️</span>
+           Informações Adicionais
+         </h2>
+   
+         <details class="info-expandivel">
+           <summary>
+             <span aria-hidden="true">📄</span>
+             Política de devolução e garantia
+           </summary>
+           <div class="conteudo-expandivel">
+             <p>
+               Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é integral e o frete de devolução é por nossa conta.
+             </p>
+           </div>
+         </details>
+   
+         <details class="info-expandivel">
+           <summary>
+             <span aria-hidden="true">❓</span>
+             Perguntas frequentes
+           </summary>
+           <div class="conteudo-expandivel">
+             <div class="faq-item">
+               <h3>O perfume é unissex?</h3>
+               <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
+             </div>
+               <div class="faq-item">
+                 <h3>Quanto tempo dura a fragrância?</h3>
+                 <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
+               </div>
+               <div class="faq-item">
+                 <h3>É adequado para uso diário?</h3>
+                 <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
+               </div>
+           </div>
+         </details>
+   
+         <details class="info-expandivel">
+           <summary>
+             <span aria-hidden="true">⭐</span>
+             Mais avaliações dos clientes
+           </summary>
+           <div class="conteudo-expandivel">
+             <ul class="avaliacoes-lista">
+               <li class="avaliacao-item">
+                 <blockquote>
+                   <p>“Perfume maravilhoso com ótima fixação. Recomendo muito!”</p>
+                 </blockquote>
+                 <p><cite>Maria S., São Paulo</cite></p>
+               </li>
+               <li class="avaliacao-item">
+                 <blockquote>
+                   <p>“Vale cada centavo. Fragrância única e marcante.”</p>
+                 </blockquote>
+                 <p><cite>João P., Rio de Janeiro</cite></p>
+               </li>
+               <li class="avaliacao-item">
+                 <blockquote>
+                   <p>“Entrega rápida e produto exatamente como descrito.”</p>
+                 </blockquote>
+                 <p><cite>Ana L., Belo Horizonte</cite></p>
+               </li>
+             </ul>
+           </div>
+         </details>
+       </section> 
+       
+           <footer class="rodape" role="contentinfo">
+             <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
+             <p class="info-acessibilidade">
+               Página otimizada para leitores de tela e navegação por teclado
+             </p>
+           </footer>
     </main>
 
-    <section class="secao-extra" aria-labelledby="titulo-informacoes">
-      <h2 id="titulo-informacoes">
-        <span aria-hidden="true">ℹ️</span>
-        Informações Adicionais
-      </h2>
-
-      <details class="info-expandivel">
-        <summary>
-          <span aria-hidden="true">📄</span>
-          Política de devolução e garantia
-        </summary>
-        <div class="conteudo-expandivel">
-          <p>
-            Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é integral e o frete de devolução é por nossa conta.
-          </p>
-        </div>
-      </details>
-
-      <details class="info-expandivel">
-        <summary>
-          <span aria-hidden="true">❓</span>
-          Perguntas frequentes
-        </summary>
-        <div class="conteudo-expandivel">
-          <div class="faq-item">
-            <h3>O perfume é unissex?</h3>
-            <p>Sim, o Essencia de Suvacu pode ser usado por homens e mulheres.</p>
-          </div>
-            <div class="faq-item">
-              <h3>Quanto tempo dura a fragrância?</h3>
-              <p>A fixação é de 8 a 12 horas, dependendo do tipo de pele.</p>
-            </div>
-            <div class="faq-item">
-              <h3>É adequado para uso diário?</h3>
-              <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
-            </div>
-        </div>
-      </details>
-
-      <details class="info-expandivel">
-        <summary>
-          <span aria-hidden="true">⭐</span>
-          Mais avaliações dos clientes
-        </summary>
-        <div class="conteudo-expandivel">
-          <ul class="avaliacoes-lista">
-            <li class="avaliacao-item">
-              <blockquote>
-                <p>“Perfume maravilhoso com ótima fixação. Recomendo muito!”</p>
-              </blockquote>
-              <p><cite>Maria S., São Paulo</cite></p>
-            </li>
-            <li class="avaliacao-item">
-              <blockquote>
-                <p>“Vale cada centavo. Fragrância única e marcante.”</p>
-              </blockquote>
-              <p><cite>João P., Rio de Janeiro</cite></p>
-            </li>
-            <li class="avaliacao-item">
-              <blockquote>
-                <p>“Entrega rápida e produto exatamente como descrito.”</p>
-              </blockquote>
-              <p><cite>Ana L., Belo Horizonte</cite></p>
-            </li>
-          </ul>
-        </div>
-      </details>
-    </section>
-
-    <footer class="rodape" role="contentinfo">
-      <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
-      <p class="info-acessibilidade">
-        Página otimizada para leitores de tela e navegação por teclado
-      </p>
-    </footer>
   </body>
 </html>
