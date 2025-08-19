@@ -134,6 +134,35 @@
         </div>
       </section>
 
+      <section class="avaliacoes-destaque">
+        <h3><span>⭐</span> O que dizem nossos clientes</h3>
+        <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
+        <div class="depoimento-cliente">
+            <!-- PROBLEMA: Alt text genérico -->
+            <img src="/img/nonno.tiff" alt="bixim malacabado" class="foto-cliente" loading="lazy"
+                onerror="this.style.display='none'">
+            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
+            <div>
+                <p>"Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"</p>
+                <span>- Marc Nonno, Turim - Itália</span>
+            </div>
+        </div>
+
+        <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
+        <div class="depoimento-cliente">
+            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
+            <div>
+                <p>"Perfume maravilhoso que elimina qualquer cheiro de "curry" do meu corpo. Minha
+                    namorada vai ao delírio"
+                </p>
+                <span>- Baran Gaum, Istambul - Turquia</span>
+            </div>
+            <!-- PROBLEMA: Alt text genérico -->
+            <img src="/img/baran.tiff" alt="bixim feiu" class="foto-cliente" loading="lazy"
+                onerror="this.style.display='none'">
+        </div>
+    </section>
+
       <section id="secao-compra" class="secao-compra" aria-labelledby="titulo-compra">
         <h2 id="titulo-compra"><span aria-hidden="true">🛒</span> Fazer Pedido</h2>
 
@@ -159,30 +188,52 @@
             <p class="instrucao">Selecione uma das opções abaixo:</p>
               </div>
 
-              <input
-                type="radio"
-                id="tamanho-75ml"
-                name="tamanho"
-                value="75"
-                data-preco="399.90"
-              />
-              <div class="opcao-tamanho popular">
-                <div class="tamanho-visual">
-                  <!-- PROBLEMA: Alt text genérico -->
-                  <img
-                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco lixo"
-                    class="mini-frasco"
-                  />
+              <div class="opcoes-tamanho">
+                <input type="radio" id="tamanho-50ml" name="tamanho" value="50" data-preco="299.90" checked>
+                <div class="opcao-tamanho">
+                    <div class="tamanho-visual">
+                        <!-- PROBLEMA: Alt text genérico -->
+                        <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
+                            alt="produto meia-boca" class="mini-frasco">
+                    </div>
+                    <div class="tamanho-info">
+                        <strong>50 mililitros - R$ 299,90</strong>
+                        <span class="descricao-opcao" id="desc-50ml">Tamanho ideal para experimentar</span>
+                    </div>
                 </div>
-                <div class="tamanho-info">
-                  <strong>75 mililitros - R$ 399,90</strong>
-                  <span class="descricao-opcao" id="desc-75ml">
-                    <span>🔥</span>
-                    MAIS POPULAR - Melhor custo benefício
-                  </span>
-                </label>
-              </div>
+
+                <input type="radio" id="tamanho-75ml" name="tamanho" value="75" data-preco="399.90">
+                <div class="opcao-tamanho popular">
+                    <div class="tamanho-visual">
+                        <!-- PROBLEMA: Alt text genérico -->
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
+                            alt="frasco lixo" class="mini-frasco">
+                    </div>
+                    <div class="tamanho-info">
+                        <strong>75 mililitros - R$ 399,90</strong>
+                        <span class="descricao-opcao" id="desc-75ml">
+                            <span>🔥</span>
+                            MAIS POPULAR - Melhor custo benefício
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" id="tamanho-100ml" name="tamanho" value="100" data-preco="499.90">
+                <div class="opcao-tamanho melhor-valor">
+                    <div class="tamanho-visual">
+                        <!-- PROBLEMA: Alt text genérico -->
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
+                            alt="imagem do produto bem ruimzim" class="mini-frasco">
+                    </div>
+                    <div class="tamanho-info">
+                        <strong>100 mililitros - R$ 499,90</strong>
+                        <span class="descricao-opcao" id="desc-100ml">
+                            <span>💰</span>
+                            MELHOR VALOR - Maior economia
+                        </span>
+                    </div>
+                </div>
+            </div>
             </div>
           </fieldset>
 
